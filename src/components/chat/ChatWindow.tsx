@@ -29,10 +29,14 @@ export function ChatWindow({ conversationId, conversation, onBack }: ChatWindowP
 
   useEffect(() => {
     setLoading(true);
+    setMessages([]);
     fetch(`/api/conversations/${conversationId}/messages`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load messages");
+        return res.json();
+      })
       .then((data) => {
-        setMessages(data);
+        setMessages(Array.isArray(data) ? data : []);
         setTimeout(scrollToBottom, 100);
       })
       .catch(console.error)
@@ -44,7 +48,11 @@ export function ChatWindow({ conversationId, conversation, onBack }: ChatWindowP
     socket.emit("join-conversation", conversationId);
 
     socket.on("new-message", (message: ChatMessageType) => {
-      setMessages((prev) => [...prev, message]);
+      // Only add messages from the other user (our own messages are added in handleSend)
+      setMessages((prev) => {
+        if (prev.some((m) => m.id === message.id)) return prev;
+        return [...prev, message];
+      });
       setTyping(false);
       setTimeout(scrollToBottom, 50);
     });
@@ -75,13 +83,15 @@ export function ChatWindow({ conversationId, conversation, onBack }: ChatWindowP
       setTimeout(scrollToBottom, 50);
 
       // Broadcast via socket
-      const socket = getSocket();
-      const recipientId = conversation?.otherUser.id;
-      socket.emit("send-message", {
-        conversationId,
-        message,
-        recipientId,
-      });
+      const recipientId = conversation?.otherUser?.id;
+      if (recipientId) {
+        const socket = getSocket();
+        socket.emit("send-message", {
+          conversationId,
+          message,
+          recipientId,
+        });
+      }
     } catch (error) {
       console.error("Failed to send:", error);
     }
@@ -113,6 +123,7 @@ export function ChatWindow({ conversationId, conversation, onBack }: ChatWindowP
             <Avatar
               username={conversation.otherUser.username}
               displayName={conversation.otherUser.displayName}
+              avatarUrl={conversation.otherUser.avatarUrl}
               team={conversation.otherUser.team as "MYSTIC" | "VALOR" | "INSTINCT" | null}
               size="sm"
             />

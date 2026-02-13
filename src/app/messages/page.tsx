@@ -19,8 +19,9 @@ export default function MessagesPage() {
   const fetchConversations = useCallback(async () => {
     try {
       const res = await fetch("/api/conversations");
+      if (!res.ok) throw new Error("Failed to fetch");
       const data = await res.json();
-      setConversations(data);
+      setConversations(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error("Failed to fetch conversations:", error);
     } finally {
@@ -49,6 +50,10 @@ export default function MessagesPage() {
 
   const handleSelectConversation = (id: string) => {
     setActiveConversation(id);
+    // Clear unread count locally when opening a conversation
+    setConversations((prev) =>
+      prev.map((c) => (c.id === id ? { ...c, unreadCount: 0 } : c))
+    );
     // On mobile, navigate to the conversation page
     if (window.innerWidth < 768) {
       router.push(`/messages/${id}`);

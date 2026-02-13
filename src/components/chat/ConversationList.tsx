@@ -46,6 +46,7 @@ export function ConversationList({ conversations, activeId, onSelect }: Conversa
           <Avatar
             username={conv.otherUser.username}
             displayName={conv.otherUser.displayName}
+            avatarUrl={conv.otherUser.avatarUrl}
             team={conv.otherUser.team as "MYSTIC" | "VALOR" | "INSTINCT" | null}
             size="md"
           />

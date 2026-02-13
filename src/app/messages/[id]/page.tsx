@@ -14,7 +14,10 @@ export default function ConversationPage({ params }: { params: Promise<{ id: str
 
   useEffect(() => {
     fetch("/api/conversations")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load conversations");
+        return res.json();
+      })
       .then((data: ConversationPreview[]) => {
         const conv = data.find((c) => c.id === id);
         if (conv) setConversation(conv);

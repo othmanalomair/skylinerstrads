@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# uploads (user-generated content)
+/public/uploads/
+
+# database
+*.sql
+
+# secrets / credentials
+*.key
+*.cert
+*.p12
+credentials.json
+service-account.json

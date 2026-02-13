@@ -9,6 +9,10 @@ export function getSocket(): Socket {
     socket = io({
       path: "/api/socketio",
       addTrailingSlash: false,
+      reconnection: true,
+      reconnectionAttempts: 10,
+      reconnectionDelay: 1000,
+      reconnectionDelayMax: 5000,
     });
   }
   return socket;
