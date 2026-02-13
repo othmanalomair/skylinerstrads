@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id           String   @id @default(uuid()) @db.Uuid
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  username     String   @unique
+  displayName  String?  @map("display_name")
+  avatarUrl    String?  @map("avatar_url")
+  bio          String?
+  trainerCode  String?  @map("trainer_code")
+  team         Team?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  pokemonLists   PokemonList[]
+  conversations1 Conversation[]  @relation("user1")
+  conversations2 Conversation[]  @relation("user2")
+  messages       Message[]
+
+  @@map("users")
+}
+
+model PokemonList {
+  id          String   @id @default(uuid()) @db.Uuid
+  userId      String   @map("user_id") @db.Uuid
+  pokemonId   Int      @map("pokemon_id")
+  pokemonName String   @map("pokemon_name")
+  listType    ListType @map("list_type")
+  isShiny     Boolean  @default(false) @map("is_shiny")
+  isShadow    Boolean  @default(false) @map("is_shadow")
+  isLucky     Boolean  @default(false) @map("is_lucky")
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, pokemonId, listType, isShiny, isShadow])
+  @@map("pokemon_lists")
+}
+
+model Conversation {
+  id              String    @id @default(uuid()) @db.Uuid
+  user1Id         String    @map("user1_id") @db.Uuid
+  user2Id         String    @map("user2_id") @db.Uuid
+  lastMessageText String?   @map("last_message_text")
+  lastMessageAt   DateTime? @map("last_message_at")
+  createdAt       DateTime  @default(now()) @map("created_at")
+
+  user1    User      @relation("user1", fields: [user1Id], references: [id], onDelete: Cascade)
+  user2    User      @relation("user2", fields: [user2Id], references: [id], onDelete: Cascade)
+  messages Message[]
+
+  @@unique([user1Id, user2Id])
+  @@map("conversations")
+}
+
+model Message {
+  id             String    @id @default(uuid()) @db.Uuid
+  conversationId String    @map("conversation_id") @db.Uuid
+  senderId       String    @map("sender_id") @db.Uuid
+  content        String
+  readAt         DateTime? @map("read_at")
+  createdAt      DateTime  @default(now()) @map("created_at")
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  sender       User         @relation(fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}
+
+enum Team {
+  MYSTIC
+  VALOR
+  INSTINCT
+}
+
+enum ListType {
+  WANT
+  OFFER
+
+  @@map("list_type")
+}
