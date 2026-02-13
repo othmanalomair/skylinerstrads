@@ -9,8 +9,8 @@ interface PokemonEntry {
   spriteUrl: string;
   types: string[];
   isShiny?: boolean;
-  isShadow?: boolean;
-  isLucky?: boolean;
+  isMirror?: boolean;
+  isDynamax?: boolean;
   isLegendary?: boolean;
   isMythical?: boolean;
   notes?: string;
@@ -39,7 +39,7 @@ export function PokemonGrid({ pokemon, onPokemonClick, onRemove, emptyMessage = 
       <div className="space-y-2">
         {pokemon.map((p) => (
           <PokemonCard
-            key={`${p.id}-${p.isShiny}-${p.isShadow}`}
+            key={`${p.id}-${p.isShiny}-${p.isMirror}`}
             {...p}
             onClick={onPokemonClick ? () => onPokemonClick(p) : undefined}
             onRemove={onRemove ? () => onRemove(p) : undefined}
@@ -54,7 +54,7 @@ export function PokemonGrid({ pokemon, onPokemonClick, onRemove, emptyMessage = 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
       {pokemon.map((p) => (
         <PokemonCard
-          key={`${p.id}-${p.isShiny}-${p.isShadow}`}
+          key={`${p.id}-${p.isShiny}-${p.isMirror}`}
           {...p}
           onClick={onPokemonClick ? () => onPokemonClick(p) : undefined}
           onRemove={onRemove ? () => onRemove(p) : undefined}

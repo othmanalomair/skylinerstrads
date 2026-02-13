@@ -4,11 +4,11 @@ import { prisma } from "@/lib/prisma";
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, password, username } = await req.json();
+    const { email, password, username, trainerCode } = await req.json();
 
-    if (!email || !password || !username) {
+    if (!email || !password || !username || !trainerCode) {
       return NextResponse.json(
-        { error: "Email, password, and username are required" },
+        { error: "Email, password, username, and trainer code are required" },
         { status: 400 }
       );
     }
@@ -29,12 +29,16 @@ export async function POST(req: NextRequest) {
 
     const existingUser = await prisma.user.findFirst({
       where: {
-        OR: [{ email }, { username }],
+        OR: [{ email }, { username }, { trainerCode }],
       },
     });
 
     if (existingUser) {
-      const field = existingUser.email === email ? "Email" : "Username";
+      const field = existingUser.email === email
+        ? "Email"
+        : existingUser.username === username
+        ? "Username"
+        : "Trainer code";
       return NextResponse.json(
         { error: `${field} already taken` },
         { status: 409 }
@@ -49,6 +53,7 @@ export async function POST(req: NextRequest) {
         passwordHash,
         username,
         displayName: username,
+        trainerCode,
       },
     });
 

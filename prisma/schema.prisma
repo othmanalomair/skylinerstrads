@@ -14,8 +14,10 @@ model User {
   displayName  String?  @map("display_name")
   avatarUrl    String?  @map("avatar_url")
   bio          String?
-  trainerCode  String?  @map("trainer_code")
+  trainerCode  String   @unique @map("trainer_code")
+  trainerCode2 String?  @map("trainer_code_2")
   team         Team?
+  role         Role     @default(USER)
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
@@ -34,14 +36,14 @@ model PokemonList {
   pokemonName String   @map("pokemon_name")
   listType    ListType @map("list_type")
   isShiny     Boolean  @default(false) @map("is_shiny")
-  isShadow    Boolean  @default(false) @map("is_shadow")
-  isLucky     Boolean  @default(false) @map("is_lucky")
+  isMirror    Boolean  @default(false) @map("is_mirror")
+  isDynamax   Boolean  @default(false) @map("is_dynamax")
   notes       String?
   createdAt   DateTime @default(now()) @map("created_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  @@unique([userId, pokemonId, listType, isShiny, isShadow])
+  @@unique([userId, pokemonId, listType, isShiny, isMirror])
   @@map("pokemon_lists")
 }
 
@@ -86,4 +88,9 @@ enum ListType {
   OFFER
 
   @@map("list_type")
+}
+
+enum Role {
+  USER
+  ADMIN
 }

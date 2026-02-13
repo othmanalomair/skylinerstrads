@@ -43,8 +43,9 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4 bg-gray-50">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
+          <img src="/images/logo-icon.png" alt="Skyliners Trades" className="h-20 mx-auto mb-4" />
           <h1 className="text-3xl font-bold text-gray-900">Welcome back</h1>
-          <p className="text-gray-500 mt-1">Sign in to your PokeTrade account</p>
+          <p className="text-gray-500 mt-1">Sign in to your account</p>
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-sm border p-6 space-y-4">

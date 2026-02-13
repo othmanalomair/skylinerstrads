@@ -2,15 +2,15 @@
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: "default" | "shiny" | "shadow" | "lucky" | "legendary" | "team";
+  variant?: "default" | "shiny" | "mirror" | "dynamax" | "legendary" | "team";
   className?: string;
 }
 
 const variantStyles = {
   default: "bg-gray-100 text-gray-700",
   shiny: "bg-amber-100 text-amber-800",
-  shadow: "bg-purple-100 text-purple-800",
-  lucky: "bg-yellow-100 text-yellow-800",
+  mirror: "bg-green-100 text-green-800",
+  dynamax: "bg-pink-100 text-pink-800",
   legendary: "bg-gradient-to-r from-amber-200 to-orange-200 text-orange-900",
   team: "bg-blue-100 text-blue-800",
 };

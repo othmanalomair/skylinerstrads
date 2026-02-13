@@ -16,8 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PokeTrade - Pokemon GO Trading",
+  title: "Skyliners Trades - Pokemon GO Trading",
   description: "Find and trade Pokemon with trainers nearby",
+  icons: {
+    icon: "/icon.png",
+    apple: "/images/logo-180.png",
+  },
 };
 
 export default function RootLayout({

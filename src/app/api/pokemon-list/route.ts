@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { pokemonId, pokemonName, listType, isShiny, isShadow, isLucky, notes } = await req.json();
+  const { pokemonId, pokemonName, listType, isShiny, isMirror, isDynamax, notes } = await req.json();
 
   if (!pokemonId || !pokemonName || !listType) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -40,8 +40,8 @@ export async function POST(req: NextRequest) {
         pokemonName,
         listType,
         isShiny: isShiny || false,
-        isShadow: isShadow || false,
-        isLucky: isLucky || false,
+        isMirror: isMirror || false,
+        isDynamax: isDynamax || false,
         notes: notes || null,
       },
     });

@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/Input";
 
 export default function RegisterPage() {
   const router = useRouter();
-  const [form, setForm] = useState({ email: "", username: "", password: "", confirmPassword: "" });
+  const [form, setForm] = useState({ email: "", username: "", password: "", confirmPassword: "", trainerCode: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -32,6 +32,7 @@ export default function RegisterPage() {
           email: form.email,
           username: form.username,
           password: form.password,
+          trainerCode: form.trainerCode,
         }),
       });
 
@@ -66,6 +67,7 @@ export default function RegisterPage() {
     <div className="min-h-screen flex items-center justify-center px-4 bg-gray-50">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
+          <img src="/images/logo-icon.png" alt="Skyliners Trades" className="h-20 mx-auto mb-4" />
           <h1 className="text-3xl font-bold text-gray-900">Create account</h1>
           <p className="text-gray-500 mt-1">Start trading Pokemon today</p>
         </div>
@@ -83,6 +85,15 @@ export default function RegisterPage() {
             value={form.username}
             onChange={(e) => setForm({ ...form, username: e.target.value })}
             placeholder="AshKetchum99"
+            required
+          />
+
+          <Input
+            label="Trainer Code"
+            value={form.trainerCode}
+            onChange={(e) => setForm({ ...form, trainerCode: e.target.value })}
+            placeholder="1234 5678 9012"
+            maxLength={14}
             required
           />
 

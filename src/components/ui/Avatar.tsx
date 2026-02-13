@@ -16,9 +16,19 @@ const sizeClasses = {
   lg: "h-16 w-16 text-xl",
 };
 
-export function Avatar({ username, displayName, team, size = "md" }: AvatarProps) {
+export function Avatar({ username, displayName, avatarUrl, team, size = "md" }: AvatarProps) {
   const initials = (displayName || username).slice(0, 2).toUpperCase();
   const teamColor = team ? TEAM_COLORS[team] : null;
+
+  if (avatarUrl) {
+    return (
+      <img
+        src={avatarUrl}
+        alt={displayName || username}
+        className={`${sizeClasses[size]} rounded-full object-cover`}
+      />
+    );
+  }
 
   return (
     <div

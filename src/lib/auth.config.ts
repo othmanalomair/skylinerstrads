@@ -17,6 +17,7 @@ export const authConfig: NextAuthConfig = {
         token.username = user.username;
         token.displayName = user.displayName;
         token.team = user.team;
+        token.role = user.role;
       }
       return token;
     },
@@ -26,13 +27,14 @@ export const authConfig: NextAuthConfig = {
       session.user.username = token.username;
       session.user.displayName = token.displayName;
       session.user.team = token.team;
+      session.user.role = token.role;
       return session;
     },
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
       const pathname = nextUrl.pathname;
 
-      const protectedPaths = ["/dashboard", "/messages"];
+      const protectedPaths = ["/dashboard", "/messages", "/admin"];
       const isProtected = protectedPaths.some((p) => pathname.startsWith(p));
 
       if (isProtected && !isLoggedIn) return false;

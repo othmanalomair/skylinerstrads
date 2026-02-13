@@ -23,8 +23,10 @@ export default function DashboardPage() {
   const [profile, setProfile] = useState<{
     bio: string | null;
     trainerCode: string | null;
+    trainerCode2: string | null;
     team: string | null;
     displayName: string | null;
+    avatarUrl: string | null;
   } | null>(null);
 
   const fetchData = useCallback(async () => {
@@ -34,8 +36,8 @@ export default function DashboardPage() {
         import("@/data/pokemon.json"),
         fetch("/api/profile"),
       ]);
-      const lists = await listRes.json();
-      const profileData = await profileRes.json();
+      const lists = listRes.ok ? await listRes.json() : [];
+      const profileData = profileRes.ok ? await profileRes.json() : null;
       setWantList(lists.filter((l: PokemonListEntry) => l.listType === "WANT"));
       setOfferList(lists.filter((l: PokemonListEntry) => l.listType === "OFFER"));
       setAllPokemon(pokemonMod.default as Pokemon[]);
@@ -51,7 +53,7 @@ export default function DashboardPage() {
     fetchData();
   }, [fetchData]);
 
-  const handleAddPokemon = async (pokemon: Pokemon, options: { isShiny: boolean; isShadow: boolean; isLucky: boolean }) => {
+  const handleAddPokemon = async (pokemon: Pokemon, options: { isShiny: boolean; isMirror: boolean; isDynamax: boolean }) => {
     try {
       const res = await fetch("/api/pokemon-list", {
         method: "POST",
@@ -61,8 +63,8 @@ export default function DashboardPage() {
           pokemonName: pokemon.name,
           listType: pickerType,
           isShiny: options.isShiny,
-          isShadow: options.isShadow,
-          isLucky: options.isLucky,
+          isMirror: options.isMirror,
+          isDynamax: options.isDynamax,
         }),
       });
       if (res.ok) fetchData();
@@ -100,6 +102,7 @@ export default function DashboardPage() {
             <Avatar
               username={session?.user?.username || ""}
               displayName={profile?.displayName}
+              avatarUrl={profile?.avatarUrl}
               team={profile?.team as "MYSTIC" | "VALOR" | "INSTINCT" | null}
               size="lg"
             />
@@ -121,6 +124,11 @@ export default function DashboardPage() {
         {profile?.trainerCode && (
           <p className="text-sm text-gray-500 mt-2 font-mono">
             Trainer Code: {profile.trainerCode}
+          </p>
+        )}
+        {profile?.trainerCode2 && (
+          <p className="text-sm text-gray-500 mt-1 font-mono">
+            Second Code: {profile.trainerCode2}
           </p>
         )}
       </div>
@@ -146,12 +154,12 @@ export default function DashboardPage() {
             spriteUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${e.pokemonId}.png`,
             types: [],
             isShiny: e.isShiny,
-            isShadow: e.isShadow,
-            isLucky: e.isLucky,
+            isMirror: e.isMirror,
+            isDynamax: e.isDynamax,
           }))}
           onRemove={(p) => {
             const entry = wantList.find(
-              (e) => e.pokemonId === p.id && e.isShiny === p.isShiny && e.isShadow === p.isShadow
+              (e) => e.pokemonId === p.id && e.isShiny === p.isShiny && e.isMirror === p.isMirror
             );
             if (entry) handleRemove(entry);
           }}
@@ -180,12 +188,12 @@ export default function DashboardPage() {
             spriteUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${e.pokemonId}.png`,
             types: [],
             isShiny: e.isShiny,
-            isShadow: e.isShadow,
-            isLucky: e.isLucky,
+            isMirror: e.isMirror,
+            isDynamax: e.isDynamax,
           }))}
           onRemove={(p) => {
             const entry = offerList.find(
-              (e) => e.pokemonId === p.id && e.isShiny === p.isShiny && e.isShadow === p.isShadow
+              (e) => e.pokemonId === p.id && e.isShiny === p.isShiny && e.isMirror === p.isMirror
             );
             if (entry) handleRemove(entry);
           }}

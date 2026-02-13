@@ -15,8 +15,8 @@ export interface PokemonListEntry {
   pokemonName: string;
   listType: "WANT" | "OFFER";
   isShiny: boolean;
-  isShadow: boolean;
-  isLucky: boolean;
+  isMirror: boolean;
+  isDynamax: boolean;
   notes?: string;
 }
 
@@ -32,6 +32,14 @@ export interface TraderProfile {
   offerCount: number;
   wantList?: PokemonListEntry[];
   offerList?: PokemonListEntry[];
+  matchedPokemon?: {
+    pokemonName: string;
+    pokemonId: number;
+    listType: string;
+    isShiny: boolean;
+    isMirror: boolean;
+    isDynamax: boolean;
+  }[];
 }
 
 export interface ConversationPreview {

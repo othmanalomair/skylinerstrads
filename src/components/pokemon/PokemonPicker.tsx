@@ -12,7 +12,7 @@ import type { Pokemon } from "@/types";
 interface PokemonPickerProps {
   open: boolean;
   onClose: () => void;
-  onSelect: (pokemon: Pokemon, options: { isShiny: boolean; isShadow: boolean; isLucky: boolean }) => void;
+  onSelect: (pokemon: Pokemon, options: { isShiny: boolean; isMirror: boolean; isDynamax: boolean }) => void;
   allPokemon: Pokemon[];
   excludeIds?: Set<string>;
 }
@@ -21,8 +21,8 @@ export function PokemonPicker({ open, onClose, onSelect, allPokemon, excludeIds 
   const [search, setSearch] = useState("");
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const [isShiny, setIsShiny] = useState(false);
-  const [isShadow, setIsShadow] = useState(false);
-  const [isLucky, setIsLucky] = useState(false);
+  const [isMirror, setIsMirror] = useState(false);
+  const [isDynamax, setIsDynamax] = useState(false);
   const [genFilter, setGenFilter] = useState<number | null>(null);
 
   const filtered = useMemo(() => {
@@ -41,20 +41,20 @@ export function PokemonPicker({ open, onClose, onSelect, allPokemon, excludeIds 
 
   const handleSelect = useCallback(() => {
     if (!selectedPokemon) return;
-    onSelect(selectedPokemon, { isShiny, isShadow, isLucky });
+    onSelect(selectedPokemon, { isShiny, isMirror, isDynamax });
     setSelectedPokemon(null);
     setIsShiny(false);
-    setIsShadow(false);
-    setIsLucky(false);
+    setIsMirror(false);
+    setIsDynamax(false);
     setSearch("");
     onClose();
-  }, [selectedPokemon, isShiny, isShadow, isLucky, onSelect, onClose]);
+  }, [selectedPokemon, isShiny, isMirror, isDynamax, onSelect, onClose]);
 
   const handleClose = () => {
     setSelectedPokemon(null);
     setIsShiny(false);
-    setIsShadow(false);
-    setIsLucky(false);
+    setIsMirror(false);
+    setIsDynamax(false);
     setSearch("");
     onClose();
   };
@@ -102,20 +102,20 @@ export function PokemonPicker({ open, onClose, onSelect, allPokemon, excludeIds 
                 <p className="text-xs text-gray-500">Special trade required</p>
               </div>
             </label>
-            <label className="flex items-center gap-3 p-3 rounded-lg border cursor-pointer hover:bg-purple-50 transition-colors">
-              <input type="checkbox" checked={isShadow} onChange={(e) => setIsShadow(e.target.checked)} className="rounded text-purple-500 focus:ring-purple-500" />
-              <span className="text-lg">🌑</span>
+            <label className="flex items-center gap-3 p-3 rounded-lg border cursor-pointer hover:bg-green-50 transition-colors">
+              <input type="checkbox" checked={isMirror} onChange={(e) => setIsMirror(e.target.checked)} className="rounded text-green-500 focus:ring-green-500" />
+              <span className="text-lg">🔄</span>
               <div>
-                <p className="text-sm font-medium">Shadow</p>
-                <p className="text-xs text-gray-500">Shadow Pokemon variant</p>
+                <p className="text-sm font-medium">Mirror</p>
+                <p className="text-xs text-gray-500">Both trainers trade the same species</p>
               </div>
             </label>
-            <label className="flex items-center gap-3 p-3 rounded-lg border cursor-pointer hover:bg-yellow-50 transition-colors">
-              <input type="checkbox" checked={isLucky} onChange={(e) => setIsLucky(e.target.checked)} className="rounded text-yellow-500 focus:ring-yellow-500" />
-              <span className="text-lg">⭐</span>
+            <label className="flex items-center gap-3 p-3 rounded-lg border cursor-pointer hover:bg-pink-50 transition-colors">
+              <input type="checkbox" checked={isDynamax} onChange={(e) => setIsDynamax(e.target.checked)} className="rounded text-pink-500 focus:ring-pink-500" />
+              <span className="text-lg">🔮</span>
               <div>
-                <p className="text-sm font-medium">Lucky</p>
-                <p className="text-xs text-gray-500">Reduced stardust cost</p>
+                <p className="text-sm font-medium">Dynamax</p>
+                <p className="text-xs text-gray-500">Dynamax/Gigantamax variant</p>
               </div>
             </label>
           </div>

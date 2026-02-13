@@ -85,7 +85,7 @@ export default function LandingPage() {
               <div className="text-4xl mb-4">📋</div>
               <h3 className="text-lg font-bold mb-2">Want & Offer Lists</h3>
               <p className="text-gray-600 text-sm">
-                List Pokemon you&apos;re looking for and ones you can trade. Tag them as Shiny, Shadow, or Lucky.
+                List Pokemon you&apos;re looking for and ones you can trade. Tag them as Shiny, Mirror, or Dynamax.
               </p>
             </div>
 
@@ -122,14 +122,14 @@ export default function LandingPage() {
               <p className="text-sm text-gray-500 mt-1">Tag shinies on your lists</p>
             </div>
             <div className="bg-white rounded-xl border p-4">
-              <span className="text-2xl">🌑</span>
-              <h3 className="font-semibold mt-2">Shadow Pokemon</h3>
-              <p className="text-sm text-gray-500 mt-1">Track shadow variants</p>
+              <span className="text-2xl">🔄</span>
+              <h3 className="font-semibold mt-2">Mirror Trades</h3>
+              <p className="text-sm text-gray-500 mt-1">Same species trades</p>
             </div>
             <div className="bg-white rounded-xl border p-4">
-              <span className="text-2xl">⭐</span>
-              <h3 className="font-semibold mt-2">Lucky Trades</h3>
-              <p className="text-sm text-gray-500 mt-1">Flag lucky Pokemon</p>
+              <span className="text-2xl">🔮</span>
+              <h3 className="font-semibold mt-2">Dynamax Pokemon</h3>
+              <p className="text-sm text-gray-500 mt-1">Track Dynamax variants</p>
             </div>
             <div className="bg-white rounded-xl border p-4">
               <span className="text-2xl">💰</span>
@@ -162,7 +162,7 @@ export default function LandingPage() {
             Ready to start trading?
           </h2>
           <p className="text-blue-100 mb-8">
-            Join trainers already using PokeTrade to complete their Pokedex.
+            Join trainers already using Skyliners Trades to complete their Pokedex.
           </p>
           {!session && (
             <Link href="/auth/register">
@@ -176,7 +176,8 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 text-center text-sm">
-        <p>PokeTrade - A Pokemon GO Trading Community</p>
+        <img src="/images/logo-icon.png" alt="Skyliners Trades" className="h-10 mx-auto mb-3 brightness-0 invert opacity-60" />
+        <p>A Pokemon GO Trading Community</p>
         <p className="mt-1 text-xs">Pokemon GO is a trademark of Niantic, Inc. This is a fan-made tool.</p>
       </footer>
     </div>

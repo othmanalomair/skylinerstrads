@@ -18,6 +18,7 @@ interface TraderData {
   avatarUrl: string | null;
   bio: string | null;
   trainerCode: string | null;
+  trainerCode2: string | null;
   team: "MYSTIC" | "VALOR" | "INSTINCT" | null;
   createdAt: string;
   wantList: PokemonListEntry[];
@@ -91,6 +92,7 @@ export default function TraderProfilePage({ params }: { params: Promise<{ userna
             <Avatar
               username={trader.username}
               displayName={trader.displayName}
+              avatarUrl={trader.avatarUrl}
               team={trader.team}
               size="lg"
             />
@@ -119,9 +121,17 @@ export default function TraderProfilePage({ params }: { params: Promise<{ userna
         {trader.bio && <p className="text-sm text-gray-600 mt-3">{trader.bio}</p>}
 
         {trader.trainerCode && (
-          <div className="mt-3 bg-gray-50 rounded-lg p-3 inline-block">
-            <p className="text-xs text-gray-500">Trainer Code</p>
-            <p className="text-lg font-mono font-bold tracking-wider">{trader.trainerCode}</p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <div className="bg-gray-50 rounded-lg p-3">
+              <p className="text-xs text-gray-500">Trainer Code</p>
+              <p className="text-lg font-mono font-bold tracking-wider">{trader.trainerCode}</p>
+            </div>
+            {trader.trainerCode2 && (
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-xs text-gray-500">Second Trainer Code</p>
+                <p className="text-lg font-mono font-bold tracking-wider">{trader.trainerCode2}</p>
+              </div>
+            )}
           </div>
         )}
 
@@ -170,8 +180,8 @@ export default function TraderProfilePage({ params }: { params: Promise<{ userna
               spriteUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${e.pokemonId}.png`,
               types: [],
               isShiny: e.isShiny,
-              isShadow: e.isShadow,
-              isLucky: e.isLucky,
+              isMirror: e.isMirror,
+              isDynamax: e.isDynamax,
             }))}
             emptyMessage={`No Pokemon in ${tab === "want" ? "want" : "offer"} list yet`}
           />

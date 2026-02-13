@@ -11,8 +11,8 @@ interface PokemonCardProps {
   spriteUrl: string;
   types: string[];
   isShiny?: boolean;
-  isShadow?: boolean;
-  isLucky?: boolean;
+  isMirror?: boolean;
+  isDynamax?: boolean;
   isLegendary?: boolean;
   isMythical?: boolean;
   notes?: string;
@@ -28,8 +28,8 @@ export function PokemonCard({
   spriteUrl,
   types,
   isShiny,
-  isShadow,
-  isLucky,
+  isMirror,
+  isDynamax,
   isLegendary,
   isMythical,
   notes,
@@ -50,8 +50,8 @@ export function PokemonCard({
           <p className="text-sm font-medium truncate">{label}</p>
           <div className="flex gap-1 flex-wrap">
             {isShiny && <Badge variant="shiny">✦ Shiny</Badge>}
-            {isShadow && <Badge variant="shadow">🌑 Shadow</Badge>}
-            {isLucky && <Badge variant="lucky">⭐ Lucky</Badge>}
+            {isMirror && <Badge variant="mirror">🔄 Mirror</Badge>}
+            {isDynamax && <Badge variant="dynamax">🔮 Dynamax</Badge>}
           </div>
         </div>
         {onRemove && (
@@ -110,8 +110,8 @@ export function PokemonCard({
 
       <div className="flex gap-1 mt-1.5 flex-wrap">
         {isShiny && <Badge variant="shiny">✦ Shiny</Badge>}
-        {isShadow && <Badge variant="shadow">🌑 Shadow</Badge>}
-        {isLucky && <Badge variant="lucky">⭐ Lucky</Badge>}
+        {isMirror && <Badge variant="mirror">🔄 Mirror</Badge>}
+        {isDynamax && <Badge variant="dynamax">🔮 Dynamax</Badge>}
         {(isLegendary || isMythical) && <Badge variant="legendary">👑 {isLegendary ? "Legendary" : "Mythical"}</Badge>}
       </div>
 

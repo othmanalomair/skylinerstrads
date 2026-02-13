@@ -16,6 +16,9 @@ export function Navbar() {
       ? [
           { href: "/dashboard", label: "My Pokemon" },
           { href: "/messages", label: "Messages" },
+          ...((session.user as any).role === "ADMIN"
+            ? [{ href: "/admin", label: "Admin" }]
+            : []),
         ]
       : []),
   ];
@@ -24,9 +27,8 @@ export function Navbar() {
     <header className="hidden md:block bg-white border-b sticky top-0 z-40">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-            <span className="text-2xl">⚡</span>
-            <span>PokeTrade</span>
+          <Link href="/" className="flex items-center">
+            <img src="/images/logo-navbar.png" alt="Skyliners Trades" className="h-9" />
           </Link>
 
           <nav className="flex items-center gap-1">
@@ -53,6 +55,7 @@ export function Navbar() {
                 <Avatar
                   username={session.user.username}
                   displayName={session.user.displayName}
+                  avatarUrl={session.user.avatarUrl}
                   team={session.user.team as "MYSTIC" | "VALOR" | "INSTINCT" | null}
                   size="sm"
                 />

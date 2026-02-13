@@ -16,6 +16,7 @@ export async function GET(
       avatarUrl: true,
       bio: true,
       trainerCode: true,
+      trainerCode2: true,
       team: true,
       createdAt: true,
       pokemonLists: {

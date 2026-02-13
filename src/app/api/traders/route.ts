@@ -4,17 +4,29 @@ import { prisma } from "@/lib/prisma";
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const search = searchParams.get("search") || "";
+  const pokemon = searchParams.get("pokemon") || "";
+  const listType = searchParams.get("listType") || "";
   const page = parseInt(searchParams.get("page") || "1");
   const limit = 20;
 
-  const where = search
-    ? {
-        OR: [
-          { username: { contains: search, mode: "insensitive" as const } },
-          { displayName: { contains: search, mode: "insensitive" as const } },
-        ],
-      }
-    : {};
+  const where: any = {};
+
+  if (search) {
+    where.OR = [
+      { username: { contains: search, mode: "insensitive" as const } },
+      { displayName: { contains: search, mode: "insensitive" as const } },
+    ];
+  }
+
+  if (pokemon) {
+    const pokemonFilter: any = {
+      pokemonName: { contains: pokemon, mode: "insensitive" as const },
+    };
+    if (listType === "WANT" || listType === "OFFER") {
+      pokemonFilter.listType = listType;
+    }
+    where.pokemonLists = { some: pokemonFilter };
+  }
 
   const [traders, total] = await Promise.all([
     prisma.user.findMany({
@@ -27,13 +39,16 @@ export async function GET(req: NextRequest) {
         bio: true,
         team: true,
         trainerCode: true,
-        _count: {
-          select: {
-            pokemonLists: true,
-          },
-        },
         pokemonLists: {
-          select: { listType: true },
+          select: { listType: true, pokemonName: true, pokemonId: true, isShiny: true, isMirror: true, isDynamax: true },
+          ...(pokemon
+            ? {
+                where: {
+                  pokemonName: { contains: pokemon, mode: "insensitive" as const },
+                  ...(listType === "WANT" || listType === "OFFER" ? { listType: listType as any } : {}),
+                },
+              }
+            : {}),
         },
       },
       orderBy: { createdAt: "desc" },
@@ -53,6 +68,16 @@ export async function GET(req: NextRequest) {
     trainerCode: t.trainerCode,
     wantCount: t.pokemonLists.filter((p) => p.listType === "WANT").length,
     offerCount: t.pokemonLists.filter((p) => p.listType === "OFFER").length,
+    matchedPokemon: pokemon
+      ? t.pokemonLists.map((p) => ({
+          pokemonName: p.pokemonName,
+          pokemonId: p.pokemonId,
+          listType: p.listType,
+          isShiny: p.isShiny,
+          isMirror: p.isMirror,
+          isDynamax: p.isDynamax,
+        }))
+      : undefined,
   }));
 
   return NextResponse.json({ traders: result, total, pages: Math.ceil(total / limit) });
