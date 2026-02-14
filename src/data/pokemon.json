@@ -11307,5 +11307,1522 @@
     "isLegendary": true,
     "isMythical": false,
     "generation": 8
+  },
+  {
+    "id": 906,
+    "name": "sprigatito",
+    "displayName": "Sprigatito",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png",
+    "types": [
+      "grass"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 907,
+    "name": "floragato",
+    "displayName": "Floragato",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png",
+    "types": [
+      "grass"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 908,
+    "name": "meowscarada",
+    "displayName": "Meowscarada",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png",
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 909,
+    "name": "fuecoco",
+    "displayName": "Fuecoco",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png",
+    "types": [
+      "fire"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 910,
+    "name": "crocalor",
+    "displayName": "Crocalor",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png",
+    "types": [
+      "fire"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 911,
+    "name": "skeledirge",
+    "displayName": "Skeledirge",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png",
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 912,
+    "name": "quaxly",
+    "displayName": "Quaxly",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 913,
+    "name": "quaxwell",
+    "displayName": "Quaxwell",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 914,
+    "name": "quaquaval",
+    "displayName": "Quaquaval",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png",
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 915,
+    "name": "lechonk",
+    "displayName": "Lechonk",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 916,
+    "name": "oinkologne",
+    "displayName": "Oinkologne",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 917,
+    "name": "tarountula",
+    "displayName": "Tarountula",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png",
+    "types": [
+      "bug"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 918,
+    "name": "spidops",
+    "displayName": "Spidops",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png",
+    "types": [
+      "bug"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 919,
+    "name": "nymble",
+    "displayName": "Nymble",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png",
+    "types": [
+      "bug"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 920,
+    "name": "lokix",
+    "displayName": "Lokix",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png",
+    "types": [
+      "bug",
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 921,
+    "name": "pawmi",
+    "displayName": "Pawmi",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png",
+    "types": [
+      "electric"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 922,
+    "name": "pawmo",
+    "displayName": "Pawmo",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png",
+    "types": [
+      "electric",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 923,
+    "name": "pawmot",
+    "displayName": "Pawmot",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png",
+    "types": [
+      "electric",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 924,
+    "name": "tandemaus",
+    "displayName": "Tandemaus",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 925,
+    "name": "maushold",
+    "displayName": "Maushold",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 926,
+    "name": "fidough",
+    "displayName": "Fidough",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png",
+    "types": [
+      "fairy"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 927,
+    "name": "dachsbun",
+    "displayName": "Dachsbun",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png",
+    "types": [
+      "fairy"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 928,
+    "name": "smoliv",
+    "displayName": "Smoliv",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png",
+    "types": [
+      "grass",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 929,
+    "name": "dolliv",
+    "displayName": "Dolliv",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png",
+    "types": [
+      "grass",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 930,
+    "name": "arboliva",
+    "displayName": "Arboliva",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png",
+    "types": [
+      "grass",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 931,
+    "name": "squawkabilly",
+    "displayName": "Squawkabilly",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 932,
+    "name": "nacli",
+    "displayName": "Nacli",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png",
+    "types": [
+      "rock"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 933,
+    "name": "naclstack",
+    "displayName": "Naclstack",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png",
+    "types": [
+      "rock"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 934,
+    "name": "garganacl",
+    "displayName": "Garganacl",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png",
+    "types": [
+      "rock"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 935,
+    "name": "charcadet",
+    "displayName": "Charcadet",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png",
+    "types": [
+      "fire"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 936,
+    "name": "armarouge",
+    "displayName": "Armarouge",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png",
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 937,
+    "name": "ceruledge",
+    "displayName": "Ceruledge",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png",
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 938,
+    "name": "tadbulb",
+    "displayName": "Tadbulb",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png",
+    "types": [
+      "electric"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 939,
+    "name": "bellibolt",
+    "displayName": "Bellibolt",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png",
+    "types": [
+      "electric"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 940,
+    "name": "wattrel",
+    "displayName": "Wattrel",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 941,
+    "name": "kilowattrel",
+    "displayName": "Kilowattrel",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 942,
+    "name": "maschiff",
+    "displayName": "Maschiff",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png",
+    "types": [
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 943,
+    "name": "mabosstiff",
+    "displayName": "Mabosstiff",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png",
+    "types": [
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 944,
+    "name": "shroodle",
+    "displayName": "Shroodle",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png",
+    "types": [
+      "poison",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 945,
+    "name": "grafaiai",
+    "displayName": "Grafaiai",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png",
+    "types": [
+      "poison",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 946,
+    "name": "bramblin",
+    "displayName": "Bramblin",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 947,
+    "name": "brambleghast",
+    "displayName": "Brambleghast",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 948,
+    "name": "toedscool",
+    "displayName": "Toedscool",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png",
+    "types": [
+      "ground",
+      "grass"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 949,
+    "name": "toedscruel",
+    "displayName": "Toedscruel",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png",
+    "types": [
+      "ground",
+      "grass"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 950,
+    "name": "klawf",
+    "displayName": "Klawf",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png",
+    "types": [
+      "rock"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 951,
+    "name": "capsakid",
+    "displayName": "Capsakid",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png",
+    "types": [
+      "grass"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 952,
+    "name": "scovillain",
+    "displayName": "Scovillain",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png",
+    "types": [
+      "grass",
+      "fire"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 953,
+    "name": "rellor",
+    "displayName": "Rellor",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png",
+    "types": [
+      "bug"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 954,
+    "name": "rabsca",
+    "displayName": "Rabsca",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png",
+    "types": [
+      "bug",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 955,
+    "name": "flittle",
+    "displayName": "Flittle",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png",
+    "types": [
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 956,
+    "name": "espathra",
+    "displayName": "Espathra",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png",
+    "types": [
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 957,
+    "name": "tinkatink",
+    "displayName": "Tinkatink",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png",
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 958,
+    "name": "tinkatuff",
+    "displayName": "Tinkatuff",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png",
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 959,
+    "name": "tinkaton",
+    "displayName": "Tinkaton",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 960,
+    "name": "wiglett",
+    "displayName": "Wiglett",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 961,
+    "name": "wugtrio",
+    "displayName": "Wugtrio",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 962,
+    "name": "bombirdier",
+    "displayName": "Bombirdier",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png",
+    "types": [
+      "flying",
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 963,
+    "name": "finizen",
+    "displayName": "Finizen",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 964,
+    "name": "palafin",
+    "displayName": "Palafin",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 965,
+    "name": "varoom",
+    "displayName": "Varoom",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png",
+    "types": [
+      "steel",
+      "poison"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 966,
+    "name": "revavroom",
+    "displayName": "Revavroom",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png",
+    "types": [
+      "steel",
+      "poison"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 967,
+    "name": "cyclizar",
+    "displayName": "Cyclizar",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png",
+    "types": [
+      "dragon",
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 968,
+    "name": "orthworm",
+    "displayName": "Orthworm",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png",
+    "types": [
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 969,
+    "name": "glimmet",
+    "displayName": "Glimmet",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png",
+    "types": [
+      "rock",
+      "poison"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 970,
+    "name": "glimmora",
+    "displayName": "Glimmora",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png",
+    "types": [
+      "rock",
+      "poison"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 971,
+    "name": "greavard",
+    "displayName": "Greavard",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png",
+    "types": [
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 972,
+    "name": "houndstone",
+    "displayName": "Houndstone",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png",
+    "types": [
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 973,
+    "name": "flamigo",
+    "displayName": "Flamigo",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png",
+    "types": [
+      "flying",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 974,
+    "name": "cetoddle",
+    "displayName": "Cetoddle",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png",
+    "types": [
+      "ice"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 975,
+    "name": "cetitan",
+    "displayName": "Cetitan",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png",
+    "types": [
+      "ice"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 976,
+    "name": "veluza",
+    "displayName": "Veluza",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png",
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 977,
+    "name": "dondozo",
+    "displayName": "Dondozo",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png",
+    "types": [
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 978,
+    "name": "tatsugiri",
+    "displayName": "Tatsugiri",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png",
+    "types": [
+      "dragon",
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 979,
+    "name": "annihilape",
+    "displayName": "Annihilape",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png",
+    "types": [
+      "fighting",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 980,
+    "name": "clodsire",
+    "displayName": "Clodsire",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png",
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 981,
+    "name": "farigiraf",
+    "displayName": "Farigiraf",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png",
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 982,
+    "name": "dudunsparce",
+    "displayName": "Dudunsparce",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 983,
+    "name": "kingambit",
+    "displayName": "Kingambit",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png",
+    "types": [
+      "dark",
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 984,
+    "name": "great-tusk",
+    "displayName": "Great Tusk",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png",
+    "types": [
+      "ground",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 985,
+    "name": "scream-tail",
+    "displayName": "Scream Tail",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png",
+    "types": [
+      "fairy",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 986,
+    "name": "brute-bonnet",
+    "displayName": "Brute Bonnet",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png",
+    "types": [
+      "grass",
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 987,
+    "name": "flutter-mane",
+    "displayName": "Flutter Mane",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png",
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 988,
+    "name": "slither-wing",
+    "displayName": "Slither Wing",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png",
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 989,
+    "name": "sandy-shocks",
+    "displayName": "Sandy Shocks",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png",
+    "types": [
+      "electric",
+      "ground"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 990,
+    "name": "iron-treads",
+    "displayName": "Iron Treads",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png",
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 991,
+    "name": "iron-bundle",
+    "displayName": "Iron Bundle",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png",
+    "types": [
+      "ice",
+      "water"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 992,
+    "name": "iron-hands",
+    "displayName": "Iron Hands",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png",
+    "types": [
+      "fighting",
+      "electric"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 993,
+    "name": "iron-jugulis",
+    "displayName": "Iron Jugulis",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png",
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 994,
+    "name": "iron-moth",
+    "displayName": "Iron Moth",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png",
+    "types": [
+      "fire",
+      "poison"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 995,
+    "name": "iron-thorns",
+    "displayName": "Iron Thorns",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png",
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 996,
+    "name": "frigibax",
+    "displayName": "Frigibax",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 997,
+    "name": "arctibax",
+    "displayName": "Arctibax",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 998,
+    "name": "baxcalibur",
+    "displayName": "Baxcalibur",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 999,
+    "name": "gimmighoul",
+    "displayName": "Gimmighoul",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png",
+    "types": [
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1000,
+    "name": "gholdengo",
+    "displayName": "Gholdengo",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png",
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1001,
+    "name": "wo-chien",
+    "displayName": "Wo Chien",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png",
+    "types": [
+      "dark",
+      "grass"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1002,
+    "name": "chien-pao",
+    "displayName": "Chien Pao",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png",
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1003,
+    "name": "ting-lu",
+    "displayName": "Ting Lu",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png",
+    "types": [
+      "dark",
+      "ground"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1004,
+    "name": "chi-yu",
+    "displayName": "Chi Yu",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png",
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1005,
+    "name": "roaring-moon",
+    "displayName": "Roaring Moon",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png",
+    "types": [
+      "dragon",
+      "dark"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1006,
+    "name": "iron-valiant",
+    "displayName": "Iron Valiant",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png",
+    "types": [
+      "fairy",
+      "fighting"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1007,
+    "name": "koraidon",
+    "displayName": "Koraidon",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png",
+    "types": [
+      "fighting",
+      "dragon"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1008,
+    "name": "miraidon",
+    "displayName": "Miraidon",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png",
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1009,
+    "name": "walking-wake",
+    "displayName": "Walking Wake",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png",
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1010,
+    "name": "iron-leaves",
+    "displayName": "Iron Leaves",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png",
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1011,
+    "name": "dipplin",
+    "displayName": "Dipplin",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1012,
+    "name": "poltchageist",
+    "displayName": "Poltchageist",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1012.png",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1013,
+    "name": "sinistcha",
+    "displayName": "Sinistcha",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1014,
+    "name": "okidogi",
+    "displayName": "Okidogi",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1014.png",
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1015,
+    "name": "munkidori",
+    "displayName": "Munkidori",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1015.png",
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1016,
+    "name": "fezandipiti",
+    "displayName": "Fezandipiti",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1016.png",
+    "types": [
+      "poison",
+      "fairy"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1017,
+    "name": "ogerpon",
+    "displayName": "Ogerpon",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png",
+    "types": [
+      "grass"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1018,
+    "name": "archaludon",
+    "displayName": "Archaludon",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png",
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1019,
+    "name": "hydrapple",
+    "displayName": "Hydrapple",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1019.png",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1020,
+    "name": "gouging-fire",
+    "displayName": "Gouging Fire",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png",
+    "types": [
+      "fire",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1021,
+    "name": "raging-bolt",
+    "displayName": "Raging Bolt",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png",
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1022,
+    "name": "iron-boulder",
+    "displayName": "Iron Boulder",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png",
+    "types": [
+      "rock",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1023,
+    "name": "iron-crown",
+    "displayName": "Iron Crown",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png",
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "isLegendary": false,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1024,
+    "name": "terapagos",
+    "displayName": "Terapagos",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1024.png",
+    "types": [
+      "normal"
+    ],
+    "isLegendary": true,
+    "isMythical": false,
+    "generation": 9
+  },
+  {
+    "id": 1025,
+    "name": "pecharunt",
+    "displayName": "Pecharunt",
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1025.png",
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "isLegendary": false,
+    "isMythical": true,
+    "generation": 9
   }
 ]

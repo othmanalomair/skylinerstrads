@@ -45,8 +45,9 @@ COPY --from=builder /app/server.js ./server.js
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/prisma.config.ts ./prisma.config.ts
 
-# Create uploads directory
+# Fix permissions for nextjs user
 RUN mkdir -p public/uploads/avatars && chown -R nextjs:nodejs public/uploads
+RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next/cache
 
 USER nextjs
 

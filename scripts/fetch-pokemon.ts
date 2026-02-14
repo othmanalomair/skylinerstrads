@@ -27,7 +27,7 @@ const GENERATION_MAP: Record<string, number> = {
   "generation-vii": 7, "generation-viii": 8, "generation-ix": 9,
 };
 
-const MAX_ID = 905;
+const MAX_ID = 1025;
 
 function capitalize(s: string): string {
   return s.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");

@@ -135,7 +135,7 @@ export function PokemonPicker({ open, onClose, onSelect, allPokemon, excludeIds 
             >
               All
             </button>
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((gen) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((gen) => (
               <button
                 key={gen}
                 onClick={() => setGenFilter(gen)}
